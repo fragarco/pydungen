@@ -3,7 +3,7 @@ import os
 import random
 import sys
 
-TILES_PATH = "./PNG"
+TILES_PATH = "./BLUE"
 
 def concatenate(im1, im2, im3, im4):
     dst = Image.new('RGB', (im1.width * 2, im1.height * 2))
@@ -47,7 +47,7 @@ def render_quarter(tiles):
 
 def main():
     global TILES_PATH
-    outputname = "level.png"
+    outputname = "mapa_generado.png"
     if len(sys.argv) == 3:
         TILES_PATH = os.path.join(".", sys.argv[1])
         outputname = sys.argv[2] + ".png"
